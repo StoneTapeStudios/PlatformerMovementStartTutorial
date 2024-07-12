@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxmpqpttxiihe"]
+[gd_scene load_steps=10 format=3 uid="uid://bxmpqpttxiihe"]
 
 [ext_resource type="Texture2D" uid="uid://dgiorn4n27wjc" path="res://assets/Tileset/tileset.png" id="1_0vuox"]
 [ext_resource type="Texture2D" uid="uid://brkrqr0js2snh" path="res://assets/Background/back.png" id="1_3mmso"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_k4h6u"]
 [ext_resource type="Texture2D" uid="uid://d0jfuqvr6nsf8" path="res://assets/Background/middle.png" id="2_g1l4r"]
 [ext_resource type="Texture2D" uid="uid://bas2iwiygrd1h" path="res://assets/Background/props.png" id="2_isvuy"]
+[ext_resource type="PackedScene" uid="uid://dqcj7kvqbu3f4" path="res://scenes/player.tscn" id="6_y4w4y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4mf3l"]
 texture = ExtResource("1_0vuox")
@@ -843,3 +844,6 @@ texture = ExtResource("2_g1l4r")
 centered = false
 
 [node name="Front" type="ParallaxLayer" parent="World/Level/ParallaxBackground"]
+
+[node name="Player" parent="World" instance=ExtResource("6_y4w4y")]
+position = Vector2(154, 69)
