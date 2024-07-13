@@ -846,4 +846,4 @@ centered = false
 [node name="Front" type="ParallaxLayer" parent="World/Level/ParallaxBackground"]
 
 [node name="Player" parent="World" instance=ExtResource("6_y4w4y")]
-position = Vector2(154, 69)
+position = Vector2(141, 13)
