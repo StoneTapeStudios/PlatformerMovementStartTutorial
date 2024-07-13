@@ -75,7 +75,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 13.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ytjdt"]
@@ -94,8 +94,8 @@ jump_component = NodePath("AdvancedJumpComponent")
 position = Vector2(1, -5)
 sprite_frames = SubResource("SpriteFrames_nl4c7")
 animation = &"run"
-frame = 4
-frame_progress = 0.490747
+frame = 1
+frame_progress = 0.19028
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ytjdt")
